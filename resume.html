@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>张彩若 - 个人简历</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans SC', sans-serif;
+      background: #f8f9fa;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+
+    .page {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+      color: #fff;
+      padding: 48px 48px 40px;
+    }
+
+    .header h1 {
+      font-size: 36px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .header .subtitle {
+      font-size: 16px;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .header .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    .header .contact-row a {
+      color: #7ec8e3;
+      text-decoration: none;
+    }
+
+    .content {
+      padding: 40px 48px 48px;
+    }
+
+    .section {
+      margin-bottom: 32px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 900;
+      color: #1a1a1a;
+      border-left: 4px solid #FF488E;
+      padding-left: 12px;
+      margin-bottom: 16px;
+    }
+
+    .section-title.blue {
+      border-color: #5199E4;
+    }
+
+    .section-title.yellow {
+      border-color: #FFC700;
+    }
+
+    .section-title.pink {
+      border-color: #FF488E;
+    }
+
+    .exp-item {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .exp-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+
+    .exp-role {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .exp-period {
+      font-size: 13px;
+      color: #888;
+      white-space: nowrap;
+    }
+
+    .exp-company {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 6px;
+    }
+
+    .exp-desc {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.8;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .skill-tag {
+      background: #f3f3f3;
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .cert-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .cert-item {
+      font-size: 14px;
+      color: #444;
+      padding: 6px 0;
+    }
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+
+    .highlight-card {
+      text-align: center;
+      background: #f8f9fa;
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .highlight-card .value {
+      font-size: 24px;
+      font-weight: 900;
+      color: #FF488E;
+    }
+
+    .highlight-card .label {
+      font-size: 12px;
+      color: #888;
+      margin-top: 4px;
+    }
+
+    .edu-info {
+      font-size: 14px;
+      color: #444;
+    }
+
+    .edu-info strong {
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 24px auto 40px;
+      padding: 12px 28px;
+      background: #1a1a1a;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .back-btn:hover {
+      background: #333;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        margin: 0;
+        border-radius: 0;
+      }
+
+      .header,
+      .content {
+        padding: 28px 24px;
+      }
+
+      .skills-grid,
+      .cert-list {
+        grid-template-columns: 1fr;
+      }
+
+      .highlight-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .exp-header {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="header">
+      <h1>张彩若</h1>
+      <div class="subtitle">新媒体内容创作者 · 汉语教学者 · 文化传播者</div>
+      <div class="contact-row">
+        <span>📧 <a href="mailto:1740673638@qq.com">1740673638@qq.com</a></span>
+        <span>📱 <a href="tel:+8618224453141">182-2445-3141</a></span>
+        <span>🎓 成都大学 · 汉语国际教育</span>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- 数据亮点 -->
+      <div class="section">
+        <div class="section-title pink">核心数据</div>
+        <div class="highlight-grid">
+          <div class="highlight-card">
+            <div class="value">900万</div>
+            <div class="label">宠物类账号最高播放</div>
+          </div>
+          <div class="highlight-card">
+            <div class="value" style="color:#5199E4">1000万+</div>
+            <div class="label">视频累计播放量</div>
+          </div>
+          <div class="highlight-card">
+            <div class="value" style="color:#FFC700">5万+</div>
+            <div class="label">账号粉丝总数</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 工作经历 -->
+      <div class="section">
+        <div class="section-title blue">工作与实践经历</div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-role">新媒体运营</span>
+            <span class="exp-period">2025.02 — 2025.05</span>
+          </div>
+          <div class="exp-company">昭昭如愿留学咨询有限公司</div>
+          <div class="exp-desc">负责账号从零搭建、视频内容创作与账号运营，独立完成脚本撰写、拍摄策划及发布全流程；注重有效沟通与信息检索，快速掌握留学行业知识，精准触达目标用户群体。</div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-role">策划编辑</span>
+            <span class="exp-period">2024.09 — 2024.12</span>
+          </div>
+          <div class="exp-company">成都市图书馆《父辈的南下》项目</div>
+          <div class="exp-desc">深度参与历史采编，协助完成纪念图集编制与纸媒书籍出版；完成视频素材制作，在多平台发布并获广泛传播，累计播放量突破100万次。</div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-role">非遗文化推广员</span>
+            <span class="exp-period">2024.06 — 2024.08</span>
+          </div>
+          <div class="exp-company">四川省川晋缘文化传播有限公司</div>
+          <div class="exp-desc">参与"非遗进社区"项目，通过深入解读非遗文化提升居民认同感；承担川南旅游推广活动讲解任务，助力非遗文化与旅游经济融合发展。</div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-role">新媒体运营</span>
+            <span class="exp-period">2024.01 — 2024.06</span>
+          </div>
+          <div class="exp-company">四川青媒聚合广告传媒有限公司</div>
+          <div class="exp-desc">负责自媒体矩阵的内容策划与制作，包括原创推文撰写、短视频内容策略制定与执行；深度分析公众号后台数据，持续优化内容结构与选题方向，提升账号整体影响力。</div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-role">教培讲师 & 家庭教师</span>
+            <span class="exp-period">2021 — 至今</span>
+          </div>
+          <div class="exp-company">教培机构 & 兼职家教</div>
+          <div class="exp-desc">在教培机构承担小学至初中全科班课辅导；同期担任兼职一对一家庭教师，深入感受学校教育与家庭教育对学生成长的影响，擅长因材施教、共情沟通，灵活运用 AI 工具提升备课与授课效率。
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-role">兼职视频剪辑师</span>
+            <span class="exp-period">2022 — 至今</span>
+          </div>
+          <div class="exp-company">自媒体 & 品牌方合作</div>
+          <div class="exp-desc">承接育儿类、家庭教育类口播视频剪辑，累计完成信息流视频100余个；将兴趣技能变现，精通成本与效益核算，熟练使用剪映等工具完成全流程后期制作。</div>
+        </div>
+      </div>
+
+      <!-- 专业能力 -->
+      <div class="section">
+        <div class="section-title yellow">专业能力</div>
+        <div class="skills-grid">
+          <div class="skill-tag">📹 短视频脚本策划与剪辑制作</div>
+          <div class="skill-tag">📊 新媒体账号运营与数据分析</div>
+          <div class="skill-tag">📝 公众号内容策划与运营</div>
+          <div class="skill-tag">🎓 汉语教学与普通话辅导</div>
+          <div class="skill-tag">🎤 主持近千人校园活动6场</div>
+          <div class="skill-tag">🎬 剪映、图文排版等工具</div>
+          <div class="skill-tag">🤖 AI 工具辅助效率提升</div>
+          <div class="skill-tag">🌍 文化传播与策划执行</div>
+        </div>
+      </div>
+
+      <!-- 荣誉证书 -->
+      <div class="section">
+        <div class="section-title pink">荣誉与证书</div>
+        <div class="cert-list">
+          <div class="cert-item">🏆 网易云播客大赛全国第四名</div>
+          <div class="cert-item">🥇 四川高校思政课一等奖</div>
+          <div class="cert-item">🎖️ 校级演讲比赛一等奖</div>
+          <div class="cert-item">📜 高级中学语文教师资格证</div>
+          <div class="cert-item">📜 高级中学心理健康教育资格证</div>
+          <div class="cert-item">🎙️ 普通话水平测试一级乙等</div>
+        </div>
+      </div>
+
+      <!-- 教育背景 -->
+      <div class="section">
+        <div class="section-title blue">教育背景</div>
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-role">成都大学 · 汉语国际教育（本科）</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="/" class="back-btn">← 返回作品集</a>
+</body>
+
+</html>
