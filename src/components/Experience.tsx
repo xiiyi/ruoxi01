@@ -58,7 +58,7 @@ export const Experience = () => {
     <section id="about" className="py-24 px-4 bg-black text-white">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16">
 
-        <div className="space-y-8 sticky top-24 h-fit">
+        <div className="space-y-8 lg:sticky lg:top-24 lg:h-fit">
           <h2 className="text-5xl md:text-6xl font-black leading-tight">
             了解我的<br />
             <span className="bg-brand-blue text-white px-2">工作经历</span>
@@ -68,11 +68,11 @@ export const Experience = () => {
           </p>
           <div className="grid grid-cols-2 gap-4 text-center">
             <div className="bg-white/10 rounded-2xl p-4">
-              <div className="text-4xl font-black text-brand-yellow">1000万+</div>
+              <div className="text-2xl sm:text-4xl font-black text-brand-yellow">1000万+</div>
               <div className="text-gray-400 text-sm mt-1">视频累计播放量</div>
             </div>
             <div className="bg-white/10 rounded-2xl p-4">
-              <div className="text-4xl font-black text-brand-pink">5万+</div>
+              <div className="text-2xl sm:text-4xl font-black text-brand-pink">5万+</div>
               <div className="text-gray-400 text-sm mt-1">账号粉丝总数</div>
             </div>
           </div>

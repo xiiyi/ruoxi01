@@ -7,10 +7,10 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto">
 
         {/* CTA */}
-        <div className="bg-white text-black p-4 md:p-8 rounded-3xl border-3 border-white mb-20 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="bg-white text-black p-4 md:p-8 rounded-3xl border-3 border-white mb-20 flex flex-col items-center justify-between gap-6">
           <div>
-            <h3 className="text-2xl md:text-3xl font-black px-4">有合作想法？欢迎聊聊！</h3>
-            <p className="text-gray-600 px-4 mt-1">无论是内容创作、教学合作还是文化传播项目，我都很期待！</p>
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-black px-4 text-center">有合作想法？欢迎聊聊！</h3>
+            <p className="text-gray-600 px-4 mt-1 text-center text-sm sm:text-base">无论是内容创作、教学合作还是文化传播项目，我都很期待！</p>
           </div>
           <div className="flex-1 w-full max-w-xl flex gap-2">
             <div className="relative flex-1">

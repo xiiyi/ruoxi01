@@ -19,7 +19,7 @@ export const Hero = () => {
           transition={{ duration: 0.5 }}
           className="space-y-8"
         >
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-black leading-[1.1] tracking-tight">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[1.1] tracking-tight">
             你好，我是<span className="bg-brand-pink px-2 text-white inline-block transform -rotate-1">张彩若</span>，
             <br />
             新媒体内容
@@ -27,7 +27,7 @@ export const Hero = () => {
             <span className="bg-brand-blue px-2 text-white inline-block transform rotate-1">创作者</span>
           </h1>
 
-          <p className="text-xl text-gray-600 max-w-lg leading-relaxed">
+          <p className="text-base sm:text-xl text-gray-600 max-w-lg leading-relaxed">
             对文化传播领域充满热情，擅长结合新媒体技术创新推广方式。具备优秀的跨文化交流能力，善于在多任务环境中追求卓越，能快速融入团队并创造价值。
           </p>
 

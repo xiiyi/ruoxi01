@@ -107,7 +107,7 @@ export const Portfolio = () => {
             { label: '普通话教学账号', value: '7000+收藏' },
           ].map((stat, i) => (
             <Card key={i} className="p-6 text-center">
-              <div className="text-2xl font-black text-brand-blue">{stat.value}</div>
+              <div className="text-lg sm:text-2xl font-black text-brand-blue">{stat.value}</div>
               <div className="text-gray-600 text-sm mt-1 font-bold">{stat.label}</div>
             </Card>
           ))}
