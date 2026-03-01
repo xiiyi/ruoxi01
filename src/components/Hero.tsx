@@ -65,7 +65,29 @@ export const Hero = () => {
                 className="w-full h-full object-cover object-top"
               />
             </div>
+            {/* Floating personality tag */}
+            <div className="absolute bottom-6 left-4 right-4 bg-black/60 backdrop-blur-md rounded-xl px-4 py-3 text-white text-center">
+              <span className="font-bold text-sm sm:text-base tracking-wide">♍ 处女座 · ENFJ 的东北女孩 ☀️</span>
+            </div>
           </div>
+
+          {/* Cartoon stickers */}
+          <motion.div
+            animate={{ y: [0, -6, 0], rotate: [0, 5, 0] }}
+            transition={{ repeat: Infinity, duration: 2.5, ease: 'easeInOut' }}
+            className="absolute -top-2 -left-6 text-5xl select-none hidden sm:block"
+            title="仓鼠"
+          >
+            🐹
+          </motion.div>
+          <motion.div
+            animate={{ y: [0, -8, 0], rotate: [0, -5, 0] }}
+            transition={{ repeat: Infinity, duration: 3, ease: 'easeInOut', delay: 0.5 }}
+            className="absolute top-8 -right-6 text-5xl select-none hidden sm:block"
+            title="蓝色虎皮鹦鹉"
+          >
+            🦜
+          </motion.div>
 
           {/* Floating badge */}
           <motion.div

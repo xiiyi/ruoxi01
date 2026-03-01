@@ -66,14 +66,18 @@ export const Experience = () => {
           <p className="text-xl text-gray-400 max-w-lg">
             横跨新媒体运营、文化传播、国际教育等多个领域，每一段经历都让我对内容创作和文化推广有了更深的理解。
           </p>
-          <div className="grid grid-cols-2 gap-4 text-center">
+          <div className="grid grid-cols-3 gap-3 text-center">
             <div className="bg-white/10 rounded-2xl p-4">
-              <div className="text-2xl sm:text-4xl font-black text-brand-yellow">1000万+</div>
-              <div className="text-gray-400 text-sm mt-1">视频累计播放量</div>
+              <div className="text-xl sm:text-3xl font-black text-brand-yellow">1000万+</div>
+              <div className="text-gray-400 text-xs sm:text-sm mt-1">视频累计播放量</div>
             </div>
             <div className="bg-white/10 rounded-2xl p-4">
-              <div className="text-2xl sm:text-4xl font-black text-brand-pink">5万+</div>
-              <div className="text-gray-400 text-sm mt-1">账号粉丝总数</div>
+              <div className="text-xl sm:text-3xl font-black text-brand-pink">5万+</div>
+              <div className="text-gray-400 text-xs sm:text-sm mt-1">账号粉丝总数</div>
+            </div>
+            <div className="bg-white/10 rounded-2xl p-4">
+              <div className="text-xl sm:text-3xl font-black text-brand-blue">2年+</div>
+              <div className="text-gray-400 text-xs sm:text-sm mt-1">工作经历2023至今<br />账号运营1年</div>
             </div>
           </div>
           <a href="/resume.html" target="_blank" rel="noopener noreferrer">
@@ -87,14 +91,15 @@ export const Experience = () => {
         <div className="space-y-6">
           {experiences.map((exp, index) => (
             <Card key={index} className="p-8 text-black hover:bg-gray-50 transition-colors">
-              <div className="flex justify-between items-start mb-3">
-                <span className="text-sm font-bold text-gray-500 uppercase tracking-wide">{exp.period}</span>
+              <div className="flex items-center gap-3 mb-3">
                 <div className={`w-10 h-10 rounded-full border-3 border-black ${exp.icon} flex items-center justify-center shrink-0`}>
                   <div className="w-3 h-3 bg-white rounded-full" />
                 </div>
+                <div>
+                  <h3 className="text-xl font-bold">{exp.role}</h3>
+                  <p className="text-brand-blue font-bold text-sm">{exp.company}</p>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-1">{exp.role}</h3>
-              <p className="text-brand-blue font-bold mb-3">{exp.company}</p>
               <p className="text-gray-600">{exp.description}</p>
               {!exp.hideLearnMore && (
                 exp.link ? (
